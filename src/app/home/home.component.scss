@@ -1,0 +1,97 @@
+
+$white: #fff;
+$gris: rgba(32, 32, 36, 0.733);
+$blueb: rgb(36, 66, 165);
+$bluel: rgb(36, 86, 179);
+$brown: rgba(128, 0, 0, 0.719);
+$transp: rgba(255,255,255,0.0);
+$black: #000;
+
+$red1: rgb(205,28,35);
+$oran1: rgb(213,62,38);
+$oran2: rgb(217,76,43);
+$yell1: rgb(230,142,48); 
+$yell2: rgb(250,210,59);
+$red2: rgb(204,40,50);
+
+$orange: rgb(243, 109, 20);
+
+.card-por{
+    border-radius: 2px;
+    box-shadow: 4px 4px $red1;
+}
+.font-1{
+    font-size: 28px;
+}
+.font-2{
+    font-size: 20px;
+}
+.font-3{
+    font-size: 15px;
+}
+.card-img-top{
+    padding: 0px 0px 0px 0px;
+}
+.cont-por-w{
+    max-height: 300px;
+    max-width: 400px;
+}
+
+.cont-por-h{
+    max-height: 400px;
+    max-width: 300px;
+}
+
+
+.col-or{
+    background-color: $orange;
+    color: rgb(255, 255, 255);
+}
+
+.col-blu{
+    background-color: $bluel;
+    color: rgb(255, 255, 255);
+}
+.h-t{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+ 
+
+
+
+.cont-img{
+    height: 300px;
+    width: 370px;
+    padding: 0px 0px 0px 0px;
+}
+.cont-img-r{
+    padding: 0px 0px 0px 0px;
+    box-shadow: 10px 10px rgb(230,45,40);
+}
+.cont-img-l{
+    padding: 0px 0px 0px 0px;
+    box-shadow: -10px 10px rgb(230,45,40);
+}
+
+.carousel-item {
+    max-height: 600px;
+    min-height: 200px;
+    padding: 10px 0px 0px 0px;
+}
+
+.pcar{
+    padding-top: -20px;
+}
+@media (max-width: 700px) { 
+    .font-img{
+        font-size: 15px;
+    }
+    .font-titimg{
+        padding-top: 0px;
+        margin-top: 0px;
+        font-size: 24px;
+    }
+
+}

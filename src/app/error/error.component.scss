@@ -1,0 +1,24 @@
+$white: #fff;
+$gris: rgba(17, 17, 19, 0.705);
+$blueb: rgb(36, 66, 165);
+$bluel: rgb(36, 86, 179);
+$red: rgba(128, 0, 0, 0.719);
+$transp: rgba(255,255,255,0.0);
+$orange: rgb(243, 109, 20);
+$black: #000;
+$ftgx: 50px;
+$ftmid: 35px;
+$ftm: 12px;
+
+.error{
+    color: $red;
+}
+.ft-gx{
+ font-size: $ftgx;
+}
+.ft-mid{
+    font-size: $ftmid;
+}
+.ft-min{
+    font-size: $ftm;
+}

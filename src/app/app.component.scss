@@ -1,0 +1,47 @@
+
+$white: #fff;
+$gris: rgba(32, 32, 36, 0.733);
+$blueb: rgb(36, 66, 165);
+$bluel: rgb(36, 86, 179);
+$brown: rgba(128, 0, 0, 0.719);
+$transp: rgba(255,255,255,0.0);
+$black: #000;
+
+$red1: rgb(205,28,35);
+$oran1: rgb(213,62,38);
+$oran2: rgb(217,76,43);
+$yell1: rgb(230,142,48); 
+$yell2: rgb(250,210,59);
+$red2: rgb(204,40,50);
+
+$orange: rgb(243, 109, 20);
+
+nav {
+    background-color: $white;
+}
+li {
+    list-style:none;
+}
+.icon-bor{
+    color: $blueb !important;
+   
+}
+.icon-bor:hover{
+    color:$orange !important;
+   
+}
+
+.text-s1:hover{
+    text-shadow: 1px 1px $oran2;
+}
+.border0{
+    border: 0px;
+    box-shadow: 1px 1px $oran1;
+    border-radius: 1px;
+}
+.borderr{
+    border: 0px;
+    border-right: 1px solid $oran1;
+    border-bottom: 1px solid $oran1;
+    border-radius: 1px;
+}

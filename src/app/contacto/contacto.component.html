@@ -1,0 +1,138 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 pl-5 mb-2">
+            <div class="card p-0 m-0 cont-img-r">
+                <div class="card-header bg-dark font-2 text-white pb-0 mb-2">
+                    <p class="float-left">COTIZAR</p>
+                </div>
+                <div class="card-text pl-2 pr-2">
+                    <form novalidate #forma="ngForm" class="container-fluid">
+                        <div class="form-group col-sm-12">
+                            <label for="name" class="float-left ml-2">Nombre : &nbsp;</label>
+                            <input type="text" class="form-control" id="name" #nm="ngModel" name="name" required
+                                minlength="3" [(ngModel)]="name">
+                            <span *ngIf="nm.touched && !nm.valid" class="text-danger">El nombre es obligatorio</span>
+                        </div>
+
+                        <div class="form-group col-sm-12">
+                            <label for="lastname" class="float-left ml-2">Apellido :&nbsp;</label>
+                            <input type="text" class="form-control" id="lastname" #lnm="ngModel" name="lastname"
+                                required minlength="3" [(ngModel)]="lastname">
+                            <span *ngIf="lnm.touched && !lnm.valid" class="text-danger">El apellido es
+                                obligatorio</span>
+                        </div>
+
+                        <div class="form-group col-sm-12">
+                            <label for="email" class="float-left ml-2">Correo :&nbsp;</label>
+                            <input type="email" class="form-control" id="email" #em="ngModel" name="email" required
+                                [(ngModel)]="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                            <span *ngIf="em.touched && !em.valid" class="text-danger">El nombre es obligatorio</span>
+
+                        </div>
+
+                        <div class="form-group col-sm-12">
+                            <label for="tel" class="float-left ml-2">Telefono :&nbsp;</label>
+                            <input type="tel" class="form-control" id="tel" #tl="ngModel" name="tel" required
+                                [(ngModel)]="tel">
+                            <span *ngIf="tl.touched && !tl.valid" class="text-danger">El nombre es obligatorio</span>
+
+                        </div>
+
+                        <div class="form-group col-sm-12">
+                            <label for="message" class="float-left ml-2">Cotizacion :&nbsp;</label>
+                            <textarea id="message" class="form-control" cols="30" #ct="ngModel" rows="4" name="message"
+                                required [(ngModel)]="message"></textarea>
+                            <span *ngIf="ct.touched && !ct.valid" class="text-danger">El nombre es obligatorio</span>
+
+                        </div>
+
+                        <div class="form-group col-sm-12 mt-2">
+                            <button class="form-control mb-1 mt-4 mr-5" [disabled]="!forma.valid" (click)="sendEmail()">
+                                Cotizar
+                            </button>
+                        </div>
+                    </form>
+                </div><!-- fin card text -->
+            </div> <!-- fin card -->
+        </div>
+
+
+        <div class="col-sm-6 mt-5 mr-0">
+            <div class="row">
+            <div class="container-fluid p-0 m-0">
+                
+                <div class="col-sm-12">
+                    <p class="float-left ml-4 font-1 pb-2 mb-2">
+                        CONTACTO 
+                    </p>
+                    
+                </div>
+            </div>
+
+
+            <div class="col-sm-6 p-0 m-0 float-sm-left">
+                
+                <ul>
+                    <li class="no-li">
+                        <p class="font-1" id="bk">Numeros</p>
+                    </li>
+                    <li class="no-li font-2 pt-0" id="bk">
+
+                        <a class="rd" href="tel:+56232478311">+562 32478311</a>
+
+                    </li>
+
+                    <li class="no-li font-2 mt-0" id="bk">
+
+                        <br><a class="rd" href="tel:+562 32478303">+562 32478303</a>
+
+                    </li>
+
+                    <li class="no-li pt-2">
+                        <p class="font-1"> whatsapp </p>
+                           
+                        <p class="font-2" id="bk">
+                              <a class="rd"
+                                href="https://api.whatsapp.com/send?phone=56942605298&amp;text=hola,%20me%20gustaría%20cotizar%20uno%20de%20sus%20productos,%20en%20el%20area%20de%20retail."
+                                target="_blank">+56942605298</a>
+                            </p>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col-sm-6 p-0 m-0 float-sm-right">
+                <ul>
+                    <li class="no-li">
+                        <p class="font-1" id="bk">CORREOS
+                        </p>
+                    </li>
+                    <li class="no-li">
+                        <p class="font-2">
+                            <a class="rd" href="#">
+                                ventas@tensairetail.cl</a>
+                        </p>
+                    </li>
+                </ul>
+                <br>
+
+                <div class="col-sm-12 p-0 m-0">
+                    <!-- direccion ini-->
+                    <ul>
+                        <li class="no-li">
+                            <p class="font-1" id="bk">Direccion</p>
+                        </li>
+                        <li id="bk" class="no-li">
+                            <p class="font-2"> Chile, Santiago, Comuna de Padre Hurtado</p>
+                        </li>
+                    </ul>
+                </div><!-- direccion fin-->
+
+            </div><!-- fin col-sm-6-->
+
+
+
+        </div><!-- fin row-->
+        </div><!-- final col-sm-6 contacto-->
+    </div>
+</div>

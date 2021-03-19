@@ -1,0 +1,51 @@
+
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-4 bg-blue"><img class="cont-img cont-img-r mb-3 mt-3 ml-3" src="../../assets/fotos(1)/corteplasma.png" alt="corte plasma"></div>
+    <div class="col-sm-8 bg-blue"><h1 class="cl-wt">Corte Plasma</h1><p class="font-3 cl-wt">En nuestra sección de corte plásma usted
+        podra disfrutar del mejor servicio de corte o diseño para sus metales. Trabajando este con cortes 
+        perfectamente definido de hasta 5 mm, además de tratar sus cortes de la mejor forma posible
+        ya que contamos con maquina y personal especializado propio para la creación y/o modificación
+        de sus productos.
+    </p></div>
+    <div class="triangle bg-blue"></div>
+   
+        
+        <div  class="col-sm-12 m-0 d-flex row d-wrap justify-content-center pt-5 pb-3">
+
+           
+            <div (click)="cambiaEstado()"  class="col-sm-3 card d-flex ml-3 mt-3 border-0">
+
+               
+                <img id="1" [ngClass]="{shi: estadoPositivo, nho: !estadoPositivo}" class="card-img-top cont-por-w w-100 h-100 card-por" src="../../assets/servicios/corteplasma/1563461359005.jpg"
+                    alt="">
+                  
+
+            </div>
+       
+            <div (click)="cambiaEstado()" class="col-sm-3 card d-flex ml-3 mt-3 border-0">
+
+
+                <img id="2" [ngClass]="{shi: estadoPositivo, nho: !estadoPositivo}" class="card-img-top cont-por-w  w-100 h-100 card-por" src="../../assets/servicios/corteplasma/IMG_20190531_134924.jpg"
+                    alt="">
+
+
+            </div>
+            <div (click)="cambiaEstado()" class="col-sm-3 card d-flex ml-3 mt-3 border-0">
+
+
+                <img id="3" [ngClass]="{shi: estadoPositivo, nho: !estadoPositivo}" class="card-img-top cont-por-w w-100 h-100 card-por" src="../../assets/servicios/corteplasma/IMG_20190911_134604.jpg" alt="">
+
+
+            </div>
+           
+           
+           
+        </div><!-- -->
+
+   
+</div>
+<div [ngClass]="{si: estadoPositivo, no: !estadoPositivo}" (click)="antiCambio()">
+<p class="text-success"> <img src="../../assets/servicios/corteplasma/{{img1}}" alt=""></p>
+</div>
+</div>

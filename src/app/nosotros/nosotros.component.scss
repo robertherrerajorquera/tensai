@@ -1,0 +1,71 @@
+$red1: rgb(205,28,35);
+$oran1: rgb(213,62,38);
+$oran2: rgb(217,76,43);
+$yell1: rgb(230,142,48); 
+$yell2: rgb(250,210,59);
+$red2: rgb(204,40,50);
+$blue: rgb(42, 97, 218);
+$wt: rgb(255,255,255);
+
+$orange: rgb(243, 109, 20);
+
+
+.bg-or2{
+    background-color: $oran2;
+}
+.bg-yel1{
+    background-color: $yell1;
+}
+.bg-blue{
+    background-color: $blue;
+}
+.cl-wt{
+    color: $wt;
+}
+.triangle{
+    margin-left: 10px;
+     width: 0;
+     height: 0px;
+     border-top: 50px solid $blue;
+     border-left: 80px solid white;
+     border-right: 80px solid white;
+     border-bottom: 0px solid blue;
+}
+
+
+.cont-img{
+    height: 200px;
+    width: 270px;
+    padding: 0px 0px 0px 0px;
+}
+.cont-img-r{
+    padding: 0px 2px 2px 0px;
+    box-shadow: 10px 10px rgb(230,45,40);
+}
+.cont-img-l{
+    padding: 0px 0px 2px 2px;
+    box-shadow: -10px 10px rgb(230,45,40);
+}
+.bor-or1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 6px 6px $oran1;
+}
+.mar-l{
+    margin-left: 20px;
+}
+
+
+
+/* cambios css para modo vertical y horizontal */
+@media only screen
+  and (min-width: 320px) 
+  and (max-width: 736px)
+{
+  .mar-l{
+      margin-left: 17px;
+      margin-right: 17px;
+  }
+  
+}
+ 

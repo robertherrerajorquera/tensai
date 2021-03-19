@@ -1,0 +1,41 @@
+$red1: rgb(205,28,35);
+$oran1: rgb(213,62,38);
+$oran2: rgb(217,76,43);
+$yell1: rgb(230,142,48); 
+$yell2: rgb(250,210,59);
+$red2: rgb(204,40,50);
+$blue: rgb(42, 97, 218);
+
+$orange: rgb(243, 109, 20);
+
+textarea{
+    resize: none;
+}
+.cont-img-r{
+    padding: 0px 2px 2px 0px;
+    box-shadow: 5px 5px rgba(32, 32, 32, 0.658);
+}
+.font-1{
+    font-size: 28px;
+}
+.font-2{
+    font-size: 20px;
+}
+.font-3{
+    font-size: 15px;
+}
+
+.no-li{
+    text-decoration: none;
+    list-style: none;
+}
+.rd{
+    color: $red1;
+}
+.rd:hover{
+    color: $blue;
+}
+a:link
+{
+text-decoration:none;
+} 
